@@ -11,13 +11,31 @@ This is the single-brand edition, for one company. It runs on your Claude subscr
 - **It is built for AI search, not just Google.** Answer-first structure, clean chunks, schema, comparison tables and the cross-platform assets that get a brand cited in AI answers.
 - **Compliance is built in.** Regulated sectors get gated and flagged for sign-off. It never pretends a draft is finished live copy.
 
-## Setup (about 5 minutes)
+## Setting up
 
-1. **Install the plugin** in the Claude desktop app or Claude Code.
-2. **Set up your brand.** Run `/voice-pack`, or just ask for a piece of content and it runs setup first. It asks a handful of questions in the chat and saves your brand details in a `brand` folder in your workspace. If your company already keeps a brand folder, you can point it there instead. No files to edit by hand.
-3. **Write.** Run `/sevo-write` with a topic, or let it take the next one from your queue.
+First, the one prerequisite: connect a folder to the Claude desktop app as your workspace. Your brand details and your finished drafts live there. They never live inside the plugin, because the plugin is replaced whenever it updates. Installing the plugin on its own does not write anything.
 
-Your brand details and drafts live in your own folder, never inside the plugin, so they survive updates. On the first piece the engine confirms your tone of voice before it writes, then remembers it.
+There are two ways to set up. Both end in the same place: a brand folder in your workspace holding `voice-pack.md`, `approved-facts.md` and `content-status.md`.
+
+### Path 1: your brand pack was prepared for you (recommended)
+
+If your agency or consultant has given you a ready-made brand folder:
+
+1. Connect your content folder in the Claude desktop app.
+2. Drop the brand folder inside it.
+3. Install the plugin.
+4. Ask for a piece, or run `/sevo-write`. The engine finds your brand folder, confirms the voice with you in one line, then writes.
+
+This is the safer route, especially in regulated sectors, because the facts and compliance rules are set by someone who knows them rather than guessed.
+
+### Path 2: set it up yourself
+
+1. Connect a content folder in the Claude desktop app.
+2. Install the plugin.
+3. Run `/voice-pack`, or just ask for a piece of content and it runs setup first. It asks you a handful of questions in the chat and saves your brand details in a `brand` folder in your workspace. No files to edit by hand.
+4. Run `/sevo-write` with a topic.
+
+Either way, on the first piece the engine confirms your tone of voice before it writes, then remembers it. Order does not matter much: you can install the plugin before or after the brand folder exists, because the engine reads the brand folder fresh each time it runs.
 
 ## Commands
 
