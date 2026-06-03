@@ -8,7 +8,7 @@ Read this first, then `house-style.md`, then `reference/sevo-principles.md`, the
 
 Two separate locations. Do not confuse them.
 
-- **The engine's own files** ship inside the plugin: this `CLAUDE.md`, `house-style.md`, `agents/`, `reference/` and the blank brand templates in `brand/`. When the plugin is installed, resolve every reference to them against the plugin install folder, which is `${CLAUDE_PLUGIN_ROOT}`, for example `${CLAUDE_PLUGIN_ROOT}/agents/writer-agent.md`. If you cannot read them, do not improvise the pipeline from memory. Find the plugin folder that holds this CLAUDE.md and the agents/ folder, or tell the user the plugin may not be installed, and stop.
+- **The engine's own files** ship inside the plugin: this `CLAUDE.md`, `house-style.md`, `agents/`, `reference/` and the blank brand templates in `brand/`. When the plugin is installed, resolve every reference to them against the plugin install folder, which is `${CLAUDE_PLUGIN_ROOT}`, for example `${CLAUDE_PLUGIN_ROOT}/agents/02-writer-agent.md`. If you cannot read them, do not improvise the pipeline from memory. Find the plugin folder that holds this CLAUDE.md and the agents/ folder, or tell the user the plugin may not be installed, and stop.
 - **Your brand folder** holds your `voice-pack.md`, `approved-facts.md`, `content-status.md` and your `drafts/`. It is your data and lives in your own space, never inside the plugin, because the plugin is replaced on update.
 
 ## Your brand folder
@@ -37,16 +37,16 @@ At the start of every job:
 Run the agents in order. Each lives at `${CLAUDE_PLUGIN_ROOT}/agents/`. Read the agent file, do its job, pass the output on.
 
 ```
-1. Research      agents/research-agent.md
+1. Research      agents/01-research-agent.md
         |
    [APPROVAL GATE]  show the angle, outline and target surfaces. Wait for a yes.
         |
-2. Writer        agents/writer-agent.md
-3. Fact-check    agents/fact-check-agent.md
-4. Compliance    agents/compliance-agent.md      <-- hard stop if it fails
-5. E-E-A-T       agents/eeat-agent.md
-6. Editor        agents/editor-agent.md
-7. SEvO polish   agents/sevo-agent.md
+2. Writer        agents/02-writer-agent.md
+3. Fact-check    agents/03-fact-check-agent.md
+4. Compliance    agents/04-compliance-agent.md      <-- hard stop if it fails
+5. E-E-A-T       agents/05-eeat-agent.md
+6. Editor        agents/06-editor-agent.md
+7. SEvO polish   agents/07-sevo-agent.md
         |
    [SIGN-OFF GATE]  regulated sectors: route to a qualified reviewer. Never auto-publish.
 ```
