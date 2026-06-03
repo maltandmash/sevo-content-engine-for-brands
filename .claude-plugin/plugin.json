@@ -1,0 +1,18 @@
+{
+  "name": "sevo-content-engine-for-brands",
+  "version": "1.0.0",
+  "description": "Search Everywhere Optimisation content engine for a single brand. Set up your brand voice once, then research, write, fact-check, compliance-check and edit content built to rank and to be cited by AI answer engines. Single-brand edition of the SEvO Content Engine.",
+  "author": {
+    "name": "Spencer Roe",
+    "email": "spencer@maltandmash.com"
+  },
+  "homepage": "https://maltandmash.com",
+  "keywords": [
+    "seo",
+    "sevo",
+    "geo",
+    "content",
+    "ai-search",
+    "marketing"
+  ]
+}
